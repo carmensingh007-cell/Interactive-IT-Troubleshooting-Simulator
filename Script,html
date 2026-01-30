@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive IT Troubleshooting Simulator - Demonstrating MSP/ISP Support Skills</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-tools"></i> Interactive IT Troubleshooting Simulator</h1>
+    <p>This simulator demonstrates practical experience in IT support for MSP/ISP environments, including Level 1-3 support, troubleshooting hardware/software/network issues, backup monitoring, system maintenance, incident reporting, escalation, and collaboration. It covers tools like ConnectWise RMM, Datto, Windows/macOS/Linux OS, cloud services (AWS, Azure, Google Cloud), networking (TCP/IP, DNS, VPNs), and strong communication/problem-solving skills under pressure. All scenarios are client-side and interactive, proving 2+ years of hands-on qualifications.</p>
+
+    <h2><i class="fas fa-search"></i> Select a Scenario</h2>
+    <select id="scenario-select">
+      <option value="">Choose a Scenario</option>
+      <option value="network-connectivity">Network Connectivity Issue (VPN/DNS in MSP)</option>
+      <option value="software-install">Software Installation Failure (Windows OS)</option>
+      <option value="hardware-trouble">Hardware Troubleshooting (Remote Desktop)</option>
+      <option value="backup-monitor">Backup Monitoring Failure (Datto)</option>
+      <option value="cloud-access">Cloud Service Access Issue (AWS/Azure)</option>
+      <option value="email-response">Email Support Request Simulation</option>
+      <option value="escalation">Complex Escalation Scenario (ISP Wireless)</option>
+      <option value="os-specific">OS-Specific Issue (Linux/macOS)</option>
+    </select>
+
+    <div id="steps" class="scenario steps"></div>
+    <div id="feedback"></div>
+
+    <h2><i class="fas fa-file-alt"></i> Incident Log (Documentation & Resolutions)</h2>
+    <div id="log"></div>
+
+    <h2><i class="fas fa-question-circle"></i> Advanced Quiz Mode: 30 Hard Test Cases</h2>
+    <p>Test your knowledge with 30 challenging IT support questions based on real-world MSP/ISP scenarios. These cover advanced troubleshooting, requiring deep understanding of systems, networks, and tools. Select answers to see immediate feedback and log entries.</p>
+    <button id="start-quiz"><i class="fas fa-play"></i> Start Quiz</button>
+    <div id="quiz-container" class="quiz-section" style="display: none;">
+      <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+      <div id="score">Score: 0 / 30</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
